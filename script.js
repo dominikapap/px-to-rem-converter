@@ -33,9 +33,11 @@ function convertText() {
       text = text.replace(list[i], newElementRem);
     }
     output.innerHTML = text;
+    output.focus()
   } else {
     output.innerHTML = "Nothing to convert :(";
     output.setAttribute("style", "color:black");
+    output.focus()
   }
 }
 
