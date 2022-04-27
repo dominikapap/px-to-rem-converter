@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PX to REM Converter</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" media="all">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main>
+        <section class="about">
+            <h1 class ="about_header"> PX TO REM TEXT CONVERTER</h1>
+                <p class ="about_text">Please input your text below and use the button to convert px values to rem. </p>
+                <p class ="about_text">Float values in output will be shown with 2 digits after decimal place.</p>
+        </section>
+        <hr>
+        <section class="converter">
+            <div class="inputs">
+                <label for="user-text" id="user-text-label">text with px:</label>
+                <textarea type="text" name="user-text" id="user-text" placeholder="Your text goes here"></textarea>
+            </div>
+            <div id="container-btns">
+                <button id="clear-btn" class="hvr-icon-bob"> <i class="fa-solid fa-broom hvr-icon"></i>CLEAR INPUT</button>
+                <button id="convert-btn" class="hvr-icon-spin"><i class="fa-solid fa-rotate hvr-icon"></i>CONVERT TEXT</i></button>
+                <button id="copy-btn" class="hvr-icon-wobble-vertical"> <i class="fa-solid fa-copy hvr-icon"></i>COPY OUTPUT</button>
+            </div>
+            <div class="outputs"><p class="output-info">Output with REM:</p>
+                <p class = "output-text">Converted text will appear here</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
