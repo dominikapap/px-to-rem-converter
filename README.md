@@ -31,27 +31,27 @@ SM 576px:
 
 MD 768px:  
   
-![](./screenshots/MD768.PNG)
+![](./screenshots/MD768.png)
 
 L 992px:  
   
-![](./screenshots/L992.PNG)
+![](./screenshots/L992.png)
 
 XL 1200px:
   
-![](./screenshots/XL1200.PNG)
+![](./screenshots/XL1200.png)
 
 XXL 1400px:
   
-![](./screenshots/XXL1400.PNG)
+![](./screenshots/XXL1400.png)
 
 
 
 
 ### Links
 
-- GitHub Repository: []()
-- Live Site URL: []()
+- GitHub Repository: [https://github.com/dominikapap/px-to-rem-converter](https://github.com/dominikapap/px-to-rem-converter)
+- Live Site URL: [https://px-to-rem-text-converter.netlify.app/](https://px-to-rem-text-converter.netlify.app/)
 
 ## My process
 
