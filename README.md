@@ -23,27 +23,16 @@ This app was made to help incorporate ready designs (e.g. Figma) or change  old 
 
 XS 375px:  
   
-![](./screenshots/XS375.PNG)
-
-SM 576px:  
-  
-![](./screenshots/SM576.PNG)
+![](./screenshots/XS375.png)
 
 MD 768px:  
   
 ![](./screenshots/MD768.png)
 
-L 992px:  
-  
-![](./screenshots/L992.png)
-
 XL 1200px:
   
 ![](./screenshots/XL1200.png)
 
-XXL 1400px:
-  
-![](./screenshots/XXL1400.png)
 
 
 
