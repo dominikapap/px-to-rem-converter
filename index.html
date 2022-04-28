@@ -16,14 +16,25 @@
     <main>
         <section class="about">
             <h1 class ="about_header"> PX TO REM TEXT CONVERTER</h1>
-                <p class ="about_text">Please input your text below and use the button to convert px values to rem. </p>
-                <p class ="about_text">Float values in output will be shown with 2 digits after decimal place.</p>
-        </section>
+            <ul><li class ="about_text"> Converter is designed for changing css text with px values into rem equivalent</li>
+                <li class ="about_text"> Text will be automatically converted upon entering, you can also use convert button. </li>
+                <li class ="about_text"> Convert parameters can be customized below.  </li>
+                <li class ="about_text"> Px minimum values affects negative numbers as well e.g. 10px means values between -10px to 10px will be ignored in conversion.  </li>
+            </ul>
+            </section>
         <hr>
+       
         <section class="converter">
+            <div class="options">
+                <label for="base" id="base-label">Base value set for 1rem: <input id ="base" type="number" min="0"max="50" placeholder="16"></label>
+                <label for="decimals" id = "decimals-label">Decimals used in output: <input id="decimals" type="number" min="0"max="3" placeholder="2"></label>
+                <label for="cconvert-min" id = "convert-min-label">Ignore abs values below: <input id="convert-min" type="number" min="-50"max="200" placeholder="10"> px</label>
+                
+            </div>
             <div class="inputs">
-                <label for="user-text" id="user-text-label">text with px:</label>
-                <textarea type="text" name="user-text" id="user-text" placeholder="Your text goes here"></textarea>
+                <label for="user-text" id="user-text-label">text with px: </label>
+                <textarea type="text" name="user-text" id="user-text" placeholder="Your text goes here" spellcheck="false"></textarea>
+                
             </div>
             <div id="container-btns">
                 <button id="clear-btn" class="hvr-icon-bob"> <i class="fa-solid fa-broom hvr-icon"></i>CLEAR INPUT</button>
@@ -35,6 +46,6 @@
             </div>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
