@@ -17,4 +17,9 @@ $font-family: "Rubik", sans-serif;
     }
   }
 
+  @mixin breakpoint($num){
+    @media (min-width: $num){
+      @content
+    }
+  }
 
