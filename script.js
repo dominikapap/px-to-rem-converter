@@ -43,6 +43,11 @@ function convertText() {
 
 copyBtn.addEventListener("click", () => copyText(output));
 
-clearBtn.addEventListener("click", () => clearElement(userInput.innerHTML));
+function clearElement(element){
+  element = '';
+}
+
+clearBtn.addEventListener("click", () => {userInput.value=''; console.log(userInput.value)});
+//clearBtn.addEventListener("click", () => {clearElement(userInput.value);console.log(userInput.value);});
 
 convertBtn.addEventListener("click", convertText);
