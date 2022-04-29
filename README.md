@@ -12,6 +12,7 @@ This app was made to help incorporate ready designs (e.g. Figma) or change  old 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Resources](#resources)
+  - [Status](#status)
 - [Author](#author)
 
 
@@ -58,6 +59,10 @@ XL 1200px:
 - Hover effects on icons within buttons made using [Hover.css](https://ianlunn.github.io/Hover/)
 - Favicon made using [Free Logo Design](https://www.freelogodesign.org/)
 
+### Status
+  Almost finished, things left to do:
+  - split script.js into modules
+  - make sure app works well on different kind of devices
 
 
 ## Author
