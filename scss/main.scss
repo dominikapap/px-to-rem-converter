@@ -2,6 +2,8 @@
 @use "colors-fonts-mixins" as *;
 @use "hover" as *;
 
+
+
 body {
   background-color: $bg;
   font-family: $font-family;
@@ -11,11 +13,19 @@ body {
 main {
   background-color: $primary;
   width: clamp(325px, 60vw, 1100px);
-  padding: clamp(32px, 4%, 48px);
+  padding-top: clamp(32px, 4%, 48px);
+  padding-bottom: 0;
   border-radius: 1rem;
+  margin-top:min(24px);
+  margin-bottom:min(24px);
   color: $accent;
   text-align: center;
   @include box-shadow;
+  section{
+    margin-left: clamp(32px, 4%, 48px);
+    margin-right: clamp(32px, 4%, 48px);
+    margin-bottom: 32px;
+  }
 }
 
 .about {
@@ -40,7 +50,6 @@ main {
     font-weight: 500;
     line-height: 1.5;
     padding-left: clamp(24px, 3%, 40px);
-    padding-right: clamp(24px, 3%, 40px);
     text-align: left;
     margin-bottom: 10px;
     @include tablet-up {
@@ -50,8 +59,68 @@ main {
   }
 }
 
+.options {
+  text-align:left; 
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  @include breakpoint(800px){
+    white-space:normal;
+  }
+
+  &>*{
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    min-width: 230px;
+    @include breakpoint(1440px){
+      padding-right: 1.2rem;
+      width: 33.33%;
+    }
+  }
+  
+  
+  @include breakpoint(1200px){
+    flex-direction: row;
+    text-align: center;
+  }
+
+  label{
+    
+    font-size: 18px;
+    min-width: 280px;
+    
+  }
+  input[type=number] {
+    width: 30px;
+    padding: 3px;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10%;
+    margin-left: $input-margin;
+
+  
+    &#base{
+      margin-left: calc($input-margin + 10px);
+      @include breakpoint(1200px){
+        margin-left:$input-margin;
+      }
+    }
+    &#convert-min{
+      margin-left: calc($input-margin + 12px);
+      @include breakpoint(1200px){
+        margin-left:$input-margin;
+      }
+    }
+    
+  }
+  
+}
+
+
+
 .converter {
   font-size: 1rem;
+  margin-bottom: 2rem;
   @include tablet-up {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -66,57 +135,7 @@ main {
       padding-bottom: 1rem;
     }
   }
-  .options {
-    text-align: left;
-    grid-column-start: span 2;
-    display:flex;
-
-    &>*{
-      line-height: 1.8;
-    }
-    
-    
-    @include breakpoint(800px){
-      flex-direction: row;
-    }
-
-    label{
-      
-      font-size: 19px;
-
-      @include breakpoint(830px){
-        width:50%;
-      }
-      &:nth-child(2) {
-        
-        @include breakpoint(800px){
-          margin-left: 1.2rem;
-        }
-      
-      }
-
-      @include breakpoint(1000px){
-        font-size: 18px;
-      }
-    }
-    input[type=number] {
-      width: 30px;
-      padding: 3px;
-      padding-left: 5px;
-      margin-left: 0.5rem;
-      border: none;
-      border-radius: 10%;
-
-      
-      
-    }
-    #base{
-      margin-left: 1rem;
-      @include breakpoint(800px){
-        margin-left: 0.5rem;
-      }
-    }
-  }
+  
 
   #user-text-label,
   .output-info {
@@ -183,11 +202,12 @@ main {
       background-color: $accent;
       border: none;
       border-radius: 10px;
-      padding: 10px 16px;
+      padding: 8px 14px;
       width: 150px;
       font-weight: 500;
       font-family: $font-family;
-      margin-right: 1rem;
+      font-size: 12px;
+      margin-right: 0.75rem;
       border: 3px solid $primary;
       &:hover {
         background-color: $primary;
@@ -200,13 +220,18 @@ main {
       @include tablet-up {
         font-size: 18px;
         width: 195px;
+        padding: 10px 16px;
+        margin-right: 1.5rem;
+      }
+      &#clear-btn{
+        margin-left: 1rem;
       }
     
     }
   }
 }
 hr {
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 2rem;
 }
 .fa-solid {
   margin-right: 5px;
@@ -216,5 +241,27 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {  
 
    opacity: 1;
+
+}
+
+footer{
+  background-color:rgb(36, 26, 127);
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0;
+  border-top: solid 2px white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  a{color: white;
+    margin-right: 2rem;
+    &#mail{
+      margin-right: 0;
+    }
+    &:hover{
+      transform: scale(1.5);
+    }
+  }
 
 }
