@@ -1,3 +1,5 @@
+//VARIABLES
+
 const userInput = document.querySelector("#user-text");
 const output = document.querySelector(".output-text");
 const convertBtn = document.querySelector("#convert-btn");
@@ -9,6 +11,8 @@ let convertMin = document.querySelector("#convert-min");
 decimals.value = 2;
 baseInput.value = 16;
 convertMin.value = 8;
+
+//FUNCTIONS
 
 function copyText(element) {
   navigator.clipboard.writeText(element.innerText);
@@ -53,12 +57,13 @@ function scrollUp(element){
   element.scrollLeft=0;
 }
 
+
+
+//EVENT LISTENERS
+
 copyBtn.addEventListener("click", () => copyText(output));
-
 clearBtn.addEventListener("click", () => (userInput.value = ""));
-
 convertBtn.addEventListener("click", convertText);
-
 userInput.addEventListener("input", convertText);
 userInput.addEventListener("change", ()=>{scrollUp(userInput);});
 
