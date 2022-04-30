@@ -23,14 +23,23 @@
             </ul>
             </section>
         <hr>
-       
-        <section class="converter">
-            <div class="options">
-                <label for="base" id="base-label">Base value set for 1rem: <input id ="base" type="number" min="0"max="50" placeholder="16"></label>
-                <label for="decimals" id = "decimals-label">Decimals used in output: <input id="decimals" type="number" min="0"max="3" placeholder="2"></label>
-                <label for="cconvert-min" id = "convert-min-label">Ignore abs values below: <input id="convert-min" type="number" min="-50"max="200" placeholder="10"> px</label>
-                
+        <section class="options">
+            <div>
+                <label for="base" id="base-label">Base value set for 1rem: </label>
+                <input id ="base" type="number" min="0"max="50" placeholder="16">
             </div>
+            <div>
+                <label for="decimals" id = "decimals-label">Decimals used in output: </label>
+                <input id="decimals" type="number" min="0"max="3" placeholder="2">
+            </div>
+            <div>
+                <label for="cconvert-min" id = "convert-min-label">Ignore px values below: </label>
+                <input id="convert-min" type="number" min="-50"max="200" placeholder="10">
+            </div>
+            
+        </section>
+        <section class="converter">
+            
             <div class="inputs">
                 <label for="user-text" id="user-text-label">text with px: </label>
                 <textarea type="text" name="user-text" id="user-text" placeholder="Your text goes here" spellcheck="false"></textarea>
@@ -45,6 +54,11 @@
                 <p class = "output-text">Converted text will appear here</p>
             </div>
         </section>
+        <footer>
+            <a href="https://github.com/dominikapap"><i class="fa-brands fa-github fa-2xl" "></i></a>
+            <a href="https://www.linkedin.com/in/dominika-papierska/"><i class="fa-brands fa-linkedin fa-2xl" ></i></a>
+            <a href="mailto:domi.papierska@gmail.com"id="mail"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+        </footer>
     </main>
     <script src="js/script.js"></script>
 </body>
