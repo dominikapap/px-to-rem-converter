@@ -390,10 +390,10 @@ main section {
   margin-left: 3px;
 }
 .about_text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   line-height: 1.5;
-  padding-left: clamp(24px, 3%, 40px);
+  padding-left: clamp(16px, 3%, 40px);
   text-align: left;
   margin-bottom: 10px;
 }
